@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Lolz</title>
+	<!-- Bootstrap File -->
+</head>
+<body>
+</body>
+
+<script>
+
+var timer = 5
+function countDown(){
+	timer--;
+	if(timer > 0){
+		setTimeout(countDown,1000);
+		console.log(timer);
+
+	}
+}
+
+countDown();
+
+
+
+</script>
+</html>

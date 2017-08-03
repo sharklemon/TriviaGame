@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Lolz</title>
+	<!-- Bootstrap File -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,900" rel="stylesheet"> 	
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+
+	<!-- Overall Bootstrap Grid -->
+	<div class="container">
+		<!-- Jumbotron with Title -->
+		<div class="jumbotron">
+			<h1 class="text-center JTtitle"><strong>Triva Game 2020</strong></h1>
+		</div> <!-- jumbotron class -->
+
+		<div class="row"><!-- main row for pits -->
+
+			<div class="col-lg-7 col-md-offset-1"><!--  main column -->
+				<div class="panel panel-default start" ><!-- start panel-->
+					<div class="panel-heading"><!-- heading-->
+						<h3 class="panel-title text-center"><br>Click Below to Start the Quiz!</h3><br>
+					</div><!-- heading-->
+					<div class="panel-body text-center"><!-- start panel body-->
+             			<button class="btn btn-primary btn-lg" id="startbtn">Start<br></button>
+         			</div><!-- start panel body-->
+				</div><!-- start panel-->
+
+				<div class="panel panel-default question"><!-- question panel-->
+					<div class="panel-heading"><!-- heading-->
+						<h3 id="questionHD"><br></h3><br>
+					</div><!-- heading-->
+					<div class="panel-body text-center"><!-- question panel body-->
+             			<button class="btn btn-primary btn-lg ansr" id="answer1">One</button>
+             			<button class="btn btn-primary btn-lg ansr" id="answer2">Two<br></button>
+             			<button class="btn btn-primary btn-lg ansr" id="answer3">Three<br></button>
+             			<button class="btn btn-primary btn-lg ansr" id="answer4">Four<br></button>
+         			</div><!-- question panel body-->
+				</div><!-- question panel-->
+
+				<div class="panel panel-default result"><!-- result panel-->
+					<div class="panel-heading"><!-- heading-->
+						<h3 class="panel-title text-center YOUWERE"><br>You were </h3><br>
+					</div><!-- heading-->
+					<div class="panel-body text-center"><!-- result panel body-->
+             			<h2 id="questionR"></h2>
+             			<h2 id="correctR"></h2>
+             			<button class="btn btn-primary btn-lg" id="nexter">Next<br></button>             			
+         			</div><!-- result panel body-->
+				</div><!-- result panel-->
+
+
+			</div><!--  main column -->
+			<div class="col-md-3"><!--  main column -->
+				<div class="panel panel-default"><!-- L choice panel-->
+					<div class="panel-heading"><!-- heading-->
+						<div class="panel-title"><h1>Timer + Score</h1></div>
+					</div><!-- heading-->
+					<div class="panel-body text-center
+					setH" id="Lpanel">
+						<h3>Timer</h3>
+             			<h3 id="timer">00:00</h3>
+						<h3>Correct Answers</h3>
+             			<h3 id="Correct">0</h3>
+						<h3>Wrong Answers</h3>
+             			<h3 id="Wrong">0</h3>
+						<h3>Questions Remaining</h3>
+             			<h3 id="Questions Remaining">0</h3>
+         			</div><!-- L choice panel body-->
+				</div><!-- L choice panel-->
+			</div><!--  main column -->
+		</div><!-- main row for pits -->
+	</div><!-- container-->
+	<footer class="footer">
+    <p>&copy; Anastasia Mark 2017</p>
+    </footer>
+</body>
+</html>
