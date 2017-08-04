@@ -56,9 +56,7 @@ var timer = 5;
 
 function NoResponse(){
 	console.log("in no response");
-	var OUT = $("h1");
-	OUT.text("You ran out of time.");
-	$(".YOUWERE").append(OUT);
+	$(".YOUWERE").html("<h1>You ran out of time.</h1>");
 	wrong++;
 	$("#Wrong").html(wrong);
 	console.log("wrong is " +wrong)
@@ -68,6 +66,7 @@ function NoResponse(){
 function setPage(){
 	$(".result").addClass('hidden');
 	$(".question").addClass('hidden');
+	$(".game_over").addClass('hidden');
 	$(".start").removeClass('hidden');
 	console.log("run setpage");
 }
@@ -94,7 +93,11 @@ $("#nexter").on("click", function(){
  	questionindex++;
  	console.log("in nexterbuttonfunction")
  	if (questionindex >=questions.length){
-  		console.log("You're done!");
+		$(".result").addClass('hidden');
+		$(".game_over").removeClass('hidden');
+		$(".YOUWERE").html("<h1>Results.</h1>");
+		var Resultspane = "<h2>You got " + correct + " correct and " + wrong + " wrong. Reload page to play again.</h2>";
+		$("#ResultsPane").html(Resultspane)
   	}
   	else{
   		console.log("nextQ should go")
@@ -136,18 +139,14 @@ function Response(){
   	if (UserAnswer == answerindex){
 	  	console.log("in response = correct");
 		correct++
-		var YES = $("h1");
-		YES.text("You were right!");
-		$(".YOUWERE").append(YES);
+		$(".YOUWERE").html("<h1>You were right!</h1>");
 	  	$("#Correct").html(correct);
 		resultz();	
 	}
   	else{
 		console.log("in response = wrong");
 		wrong++
-		var NOPE = $("h1");
-		NOPE.text("Nope.");
-		$(".YOUWERE").append(NOPE);
+		$(".YOUWERE").html("<h1>Nope.</h1>");
 		$("#Wrong").html(wrong);
 		resultz();	
 	}	  	
@@ -160,13 +159,14 @@ function resultz(){
 
 	//display correct answer & next button with functionality
 	$("#questionR").html(thisquestion);
+	console.log(questions[questionindex].img)
+	$("#pix").attr("src", questions[questionindex].img);
 	$("#correctR").html("The answer was "+ thisanswer);
 	remainder--;
 	console.log("remainder " + remainder);
 	$("#Questions_Remaining").html(remainder);
 	$("#timer").html("0 seconds left");	
 	$("#nexter").show();
-	$("jumbotron").removeClass('hidden');
 };	
 
 

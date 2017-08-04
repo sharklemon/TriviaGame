@@ -8,7 +8,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left bottom; 
-    background-size: 440px, 500px;
+    background-size: 400px, 500px;
 }
 
 .show {
@@ -23,11 +23,44 @@ body{
 }
 .jumbotron{
 	background-color: rgba(255,255,255,0);
+;
 }
-.JTitle{
+
+h1{}
+#JTtitle{
+	color: rgb(133,94,172);
 
 }
-button{}
+button{
+	border-color: rgb(242,154,194);
+	border-width: 4px;
+}
 .ansr{
+	margin:20px;	
+}
+
+#nexter{
 	margin:20px;
 }
+
+
+#startbtn{
+	padding:40px;	
+
+}
+div{}
+.panel-body{
+	background-color: rgba(242, 154, 194, 0.2);
+	height:400px;
+}
+.panel{
+	border:0;
+}
+
+.panel > .panel-heading{
+	background-color: rgb(242, 154, 194);
+    background-image: none;
+}
+
+
+

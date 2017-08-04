@@ -17,7 +17,7 @@
 	<div class="container">
 		<!-- Jumbotron with Title -->
 		<div class="jumbotron">
-			<h1 class="text-center JTtitle"><strong>Triva Game</strong></h1>
+			<h1 class="text-center" id="JTtitle"><strong>Triva Game</strong></h1>
 		</div> <!-- jumbotron class -->
 
 		<div class="row"><!-- main row for pits -->
@@ -59,10 +59,22 @@
 					<div class="panel-body text-center"><!-- result panel body-->
              			<h2 id="questionR"></h2>
              			<h2 id="correctR"></h2>
-             			<button class="btn btn-primary btn-lg" id="nexter">Next</button>             			
+						<img id="pix" src="" alt="answer pic" height="150" width="150">
+             			<div class="row">
+             			<button class="btn btn-primary btn-lg" id="nexter">Next</button>    
+             			</div>         			
          			</div><!-- result panel body-->
 				</div><!-- result panel-->
-
+				
+				<div class="panel panel-default game_over"><!-- GO panel-->
+					<div class="panel-heading"><!-- heading-->
+						<div class="panel-title text-center YOUWERE">
+						</div>
+					</div><!-- heading-->
+					<div class="panel-body text-center"><!-- GO panel body-->
+             			<div id="ResultsPane"></div>          			
+         			</div><!-- GO panel body-->
+				</div><!-- GO panel-->
 
 			</div><!--  main column -->
 			
@@ -87,7 +99,7 @@
 			</div><!--  side column -->
 		</div><!-- main row for pits -->
 	</div><!-- container-->
-	<footer class="footer">
+	<footer class="footer text-right">
     <p>&copy; Anastasia Mark 2017</p>
     </footer>
 </body>
