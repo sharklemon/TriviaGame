@@ -3,6 +3,14 @@ font-family: 'Vollkorn', serif;
 border:0;
 }
 
+body{
+	background-image: url("../images/quizler.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom; 
+    background-size: 440px, 500px;
+}
+
 .show {
   display: block !important;
 }
@@ -12,4 +20,14 @@ border:0;
 }
 .invisible {
   visibility: hidden;
+}
+.jumbotron{
+	background-color: rgba(255,255,255,0);
+}
+.JTitle{
+
+}
+button{}
+.ansr{
+	margin:20px;
 }

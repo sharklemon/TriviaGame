@@ -17,64 +17,74 @@
 	<div class="container">
 		<!-- Jumbotron with Title -->
 		<div class="jumbotron">
-			<h1 class="text-center JTtitle"><strong>Triva Game 2020</strong></h1>
+			<h1 class="text-center JTtitle"><strong>Triva Game</strong></h1>
 		</div> <!-- jumbotron class -->
 
 		<div class="row"><!-- main row for pits -->
 
-			<div class="col-lg-7 col-md-offset-1"><!--  main column -->
+			<div class="col-md-6 col-md-offset-3"><!--  main column -->
 				<div class="panel panel-default start" ><!-- start panel-->
 					<div class="panel-heading"><!-- heading-->
-						<h3 class="panel-title text-center"><br>Click Below to Start the Quiz!</h3><br>
+						<div class="panel-title text-center">
+						<h2>Click Below to Start!</h2>
+						</div>
 					</div><!-- heading-->
 					<div class="panel-body text-center"><!-- start panel body-->
-             			<button class="btn btn-primary btn-lg" id="startbtn">Start<br></button>
+             			<button class="btn btn-primary btn-lg" id="startbtn">click me
+             			</button>
          			</div><!-- start panel body-->
 				</div><!-- start panel-->
 
 				<div class="panel panel-default question"><!-- question panel-->
 					<div class="panel-heading"><!-- heading-->
-						<h3 id="questionHD"><br></h3><br>
+						<h3 id="questionHD"></h3>
 					</div><!-- heading-->
 					<div class="panel-body text-center"><!-- question panel body-->
+             			<div class="row btnsrow">
              			<button class="btn btn-primary btn-lg ansr" id="answer1">One</button>
-             			<button class="btn btn-primary btn-lg ansr" id="answer2">Two<br></button>
-             			<button class="btn btn-primary btn-lg ansr" id="answer3">Three<br></button>
-             			<button class="btn btn-primary btn-lg ansr" id="answer4">Four<br></button>
+             			<button class="btn btn-primary btn-lg ansr" id="answer2">Two</button>
+             			</div>
+             			<div class="row btnsrow">
+             			<button class="btn btn-primary btn-lg ansr" id="answer3">Three</button>
+             			<button class="btn btn-primary btn-lg ansr" id="answer4">Four</button>
+             			</div>
          			</div><!-- question panel body-->
 				</div><!-- question panel-->
 
 				<div class="panel panel-default result"><!-- result panel-->
 					<div class="panel-heading"><!-- heading-->
-						<h3 class="panel-title text-center YOUWERE"><br>You were </h3><br>
+						<div class="panel-title text-center YOUWERE">
+						</div>
 					</div><!-- heading-->
 					<div class="panel-body text-center"><!-- result panel body-->
              			<h2 id="questionR"></h2>
              			<h2 id="correctR"></h2>
-             			<button class="btn btn-primary btn-lg" id="nexter">Next<br></button>             			
+             			<button class="btn btn-primary btn-lg" id="nexter">Next</button>             			
          			</div><!-- result panel body-->
 				</div><!-- result panel-->
 
 
 			</div><!--  main column -->
-			<div class="col-md-3"><!--  main column -->
+			
+
+			<div class="col-lg-3"><!--  side column -->
 				<div class="panel panel-default"><!-- L choice panel-->
 					<div class="panel-heading"><!-- heading-->
-						<div class="panel-title"><h1>Timer + Score</h1></div>
+						<div class="panel-title text-center"><h2>Timer + Score</h2></div>
 					</div><!-- heading-->
 					<div class="panel-body text-center
 					setH" id="Lpanel">
 						<h3>Timer</h3>
-             			<h3 id="timer">00:00</h3>
+             			<p id="timer">10 seconds per question</p>
 						<h3>Correct Answers</h3>
-             			<h3 id="Correct">0</h3>
+             			<p id="Correct">0</p>
 						<h3>Wrong Answers</h3>
-             			<h3 id="Wrong">0</h3>
+             			<p id="Wrong">0</p>
 						<h3>Questions Remaining</h3>
-             			<h3 id="Questions Remaining">0</h3>
+             			<p id="Questions_Remaining">6</p>
          			</div><!-- L choice panel body-->
 				</div><!-- L choice panel-->
-			</div><!--  main column -->
+			</div><!--  side column -->
 		</div><!-- main row for pits -->
 	</div><!-- container-->
 	<footer class="footer">
