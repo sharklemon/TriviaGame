@@ -4,11 +4,6 @@ border:0;
 }
 
 body{
-	background-image: url("../images/quizler.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: left bottom; 
-    background-size: 400px, 500px;
 }
 
 .show {
@@ -60,6 +55,15 @@ div{}
 .panel > .panel-heading{
 	background-color: rgb(242, 154, 194);
     background-image: none;
+}
+
+.leftyy{
+    background-image: url("../images/quizler2.jpg");
+	height:480px;
+}
+img{
+}
+#pix{	
 }
 
 
