@@ -95,7 +95,7 @@ $("#nexter").on("click", function(){
  	if (questionindex >=questions.length){
 		$(".result").addClass('hidden');
 		$(".game_over").removeClass('hidden');
-		$(".YOUWERE").html("<h1>Results.</h1>");
+		$(".YOUWERE").html("<h1>Results</h1>");
 		var Resultspane = "<h2>You got " + correct + " correct and " + wrong + " wrong. Reload page to play again.</h2>";
 		$("#ResultsPane").html(Resultspane)
   	}
@@ -121,7 +121,7 @@ function changeDisplay(z) {
 	$("#answer4").html(questions[z].answer4);
 
 	// start the display timer & go to response page timer
-	timer = 5;
+	timer = 10;
 	countDown(timer);
 	itertimer = setTimeout(NoResponse, 10000);
 
@@ -161,7 +161,7 @@ function resultz(){
 	$("#questionR").html(thisquestion);
 	console.log(questions[questionindex].img)
 	$("#pix").attr("src", questions[questionindex].img);
-	$("#correctR").html("The answer was "+ thisanswer);
+	$("#correctR").html("The answer was "+ thisanswer+".");
 	remainder--;
 	console.log("remainder " + remainder);
 	$("#Questions_Remaining").html(remainder);
