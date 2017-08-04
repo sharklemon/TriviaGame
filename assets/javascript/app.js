@@ -51,7 +51,7 @@ var UserAnswer;
 
 var correct =0;
 var wrong =0;
-var timer = 5;
+var timer = 10;
 
 
 function NoResponse(){
@@ -123,7 +123,7 @@ function changeDisplay(z) {
 	// start the display timer & go to response page timer
 	timer = 5;
 	countDown(timer);
-	itertimer = setTimeout(NoResponse, 5000);
+	itertimer = setTimeout(NoResponse, 10000);
 
 	//pull out and save the ID and text of correct answer for comparison, enable answer click button
 	thisquestion = questions[z].question;
